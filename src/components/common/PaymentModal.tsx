@@ -48,7 +48,7 @@ export const PaymentModal: React.FC = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
-        className="bg-[#FAF9F5] border border-[#D5E2DC] rounded-3xl shadow-2xl max-w-xl w-full overflow-hidden relative my-6"
+        className="bg-[#FAF9F5] border border-[#D5E2DC] rounded-3xl shadow-2xl max-w-xl w-full overflow-hidden relative my-auto max-h-[90vh] flex flex-col"
       >
         {/* Header */}
         <div className="bg-[#18241F] text-white p-6 relative flex items-center justify-between">
@@ -72,7 +72,7 @@ export const PaymentModal: React.FC = () => {
 
         {/* Content */}
         {!completed ? (
-          <div className="p-6 space-y-6">
+          <div className="p-5 sm:p-6 space-y-6 overflow-y-auto flex-1">
             {/* Amount Banner */}
             <div className="bg-white p-4 rounded-2xl border border-[#D5E2DC] flex items-center justify-between">
               <div>

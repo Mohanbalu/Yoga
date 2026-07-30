@@ -181,7 +181,7 @@ export const AdminDashboard: React.FC = () => {
         {/* Layout: Sidebar + Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Sidebar Tabs (Col 1-3) */}
-          <div className="lg:col-span-3 space-y-1">
+          <div className="lg:col-span-3 flex flex-row lg:flex-col overflow-x-auto no-scrollbar gap-2 lg:gap-1 pb-3 lg:pb-0">
             {[
               { id: 'overview', label: 'Dashboard & Analytics', icon: BarChart3 },
               { id: 'bookings', label: 'All Class Bookings', icon: Calendar },
@@ -194,10 +194,10 @@ export const AdminDashboard: React.FC = () => {
               <button
                 key={item.id}
                 onClick={() => setAdminTab(item.id as any)}
-                className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-xs font-semibold transition-all cursor-pointer ${
+                className={`flex items-center gap-2.5 px-4 py-2.5 lg:py-3 rounded-2xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer shrink-0 lg:shrink ${
                   adminTab === item.id
                     ? 'bg-[#1B3B36] text-white shadow-md'
-                    : 'hover:bg-current/5 text-current/80'
+                    : 'hover:bg-current/5 text-current/80 bg-white/5'
                 }`}
               >
                 <item.icon className="w-4 h-4" />

@@ -19,7 +19,7 @@ export const InvoiceModal: React.FC = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
-        className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full overflow-hidden border border-[#D5E2DC] relative my-6"
+        className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full overflow-hidden border border-[#D5E2DC] relative my-auto max-h-[90vh] flex flex-col"
       >
         {/* Top Control Bar */}
         <div className="bg-[#18241F] text-white p-4 px-6 flex items-center justify-between">
@@ -44,7 +44,7 @@ export const InvoiceModal: React.FC = () => {
         </div>
 
         {/* Printable Area */}
-        <div className="p-8 space-y-6 text-[#2C3B34]">
+        <div className="p-5 sm:p-8 space-y-6 text-[#2C3B34] overflow-y-auto flex-1">
           {/* Header Branding */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-[#E6EBE8] gap-4">
             <div>

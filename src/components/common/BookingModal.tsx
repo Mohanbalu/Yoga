@@ -107,7 +107,7 @@ export const BookingModal: React.FC = () => {
         initial={{ opacity: 0, scale: 0.95, y: 10 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.95, y: 10 }}
-        className="bg-[#FAF9F5] border border-[#D5E2DC] rounded-3xl shadow-2xl max-w-2xl w-full overflow-hidden my-8 relative"
+        className="bg-[#FAF9F5] border border-[#D5E2DC] rounded-3xl shadow-2xl max-w-2xl w-full overflow-hidden my-auto relative max-h-[90vh] flex flex-col"
       >
         {/* Header */}
         <div className="bg-[#1B3B36] text-white p-6 relative flex items-center justify-between">
@@ -137,7 +137,7 @@ export const BookingModal: React.FC = () => {
         </div>
 
         {/* Body Content */}
-        <div className="p-6 sm:p-8">
+        <div className="p-5 sm:p-8 overflow-y-auto flex-1">
           {/* STEP 1: Select Service & Trainer */}
           {step === 1 && (
             <div className="space-y-6">
