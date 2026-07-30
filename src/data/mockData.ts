@@ -343,13 +343,6 @@ export const GALLERY_IMAGES: GalleryImage[] = [
     caption: 'Harmonious morning group session bathed in gentle warm light.'
   },
   {
-    id: 'g-3',
-    title: 'Tibetan Sound Bath Chamber',
-    category: 'Meditation Room',
-    url: 'https://images.unsplash.com/photo-1510894347048-471ea1f732a8?auto=format&fit=crop&q=80&w=1200',
-    caption: 'Acoustically tuned acoustic hall with 24K gold-plated singing bowls.'
-  },
-  {
     id: 'g-4',
     title: 'Himalayan Mindful Retreat',
     category: 'Retreats',
