@@ -56,7 +56,7 @@ export const PaymentModal: React.FC = () => {
             <div className="inline-flex items-center gap-1 text-[#E2C085] text-[10px] font-semibold uppercase tracking-widest mb-1">
               <Lock className="w-3 h-3" /> 256-Bit SSL Secure Checkout
             </div>
-            <h3 className="font-serif-luxury text-2xl font-bold">Sattva Payment Gateway</h3>
+            <h3 className="font-serif-luxury text-2xl font-bold">yogyatra_shreya Payment Gateway</h3>
             <p className="text-xs text-[#A1BBB0]">
               Booking ID: {activePaymentBooking.id} • {activePaymentBooking.serviceName}
             </p>

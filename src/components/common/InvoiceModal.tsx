@@ -49,14 +49,16 @@ export const InvoiceModal: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-[#E6EBE8] gap-4">
             <div>
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-[#1B3B36] text-[#E2C085] flex items-center justify-center font-serif-luxury font-bold text-lg">
-                  S
-                </div>
-                <h2 className="font-serif-luxury text-2xl font-bold text-[#1B3B36]">Sattva Yoga Studio</h2>
+                <img
+                  src="https://i.ibb.co/RkBVMMCm/logo.png"
+                  alt="yogyatra_shreya Logo"
+                  className="w-8 h-8 object-contain rounded-full bg-[#1B3B36] p-0.5"
+                />
+                <h2 className="font-serif-luxury text-xl font-bold text-[#1B3B36]">yogyatra_shreya Yoga Studio</h2>
               </div>
               <p className="text-[11px] text-[#6B857B] mt-1">
                 42 Lotus Boulevard, Indiranagar, Bengaluru, KA 560038<br />
-                GSTIN: 29AABCS8812K1Z9 • Email: billing@sattvayoga.com
+                GSTIN: 29AABCS8812K1Z9 • Email: billing@yogyatra_shreya.com
               </p>
             </div>
 
@@ -123,7 +125,7 @@ export const InvoiceModal: React.FC = () => {
           </div>
 
           <div className="text-center pt-4 border-t border-[#E6EBE8] text-[11px] text-[#88B09F]">
-            This is a computer-generated tax invoice. Thank you for practicing with Sattva.
+            This is a computer-generated tax invoice. Thank you for practicing with yogyatra_shreya.
           </div>
         </div>
       </motion.div>

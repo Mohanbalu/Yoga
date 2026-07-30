@@ -241,7 +241,7 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
   },
   {
     id: 'plan-vip',
-    title: 'Sattva Royal VIP',
+    title: 'yogyatra_shreya Royal VIP',
     badge: 'LUXURY EXPERIENCE',
     tagline: 'Complete 360° lifestyle concierge, personal master coaching & total privacy.',
     priceMonthly: 12999,
@@ -267,7 +267,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Radhika Malhotra',
     role: 'Architect & Creative Director',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400',
-    comment: 'Sattva is not just a studio; it is an oasis. The minimalist architecture, scent of lemongrass, and world-class master teachers completely transformed my posture and mental resilience within 3 months.',
+    comment: 'yogyatra_shreya is not just a studio; it is an oasis. The minimalist architecture, scent of lemongrass, and world-class master teachers completely transformed my posture and mental resilience within 3 months.',
     rating: 5,
     serviceUsed: 'Serenity Unlimited Membership',
     verified: true
@@ -496,7 +496,7 @@ export const INITIAL_BLOGS: BlogPost[] = [
 ];
 
 export const INITIAL_COUPONS: CouponCode[] = [
-  { id: 'c-1', code: 'SATTVA10', discountPercentage: 10, validUntil: '2026-12-31', usageCount: 142, active: true },
+  { id: 'c-1', code: 'YOGYATRA10', discountPercentage: 10, validUntil: '2026-12-31', usageCount: 142, active: true },
   { id: 'c-2', code: 'PEACE20', discountPercentage: 20, validUntil: '2026-09-30', usageCount: 89, active: true },
   { id: 'c-3', code: 'LUXURYVIP', discountPercentage: 25, validUntil: '2026-11-15', usageCount: 23, active: true }
 ];

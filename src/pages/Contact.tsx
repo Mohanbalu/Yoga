@@ -43,7 +43,7 @@ export const Contact: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Dedicated Studio Concierge</span>
           </div>
-          <h1 className="font-serif-luxury text-4xl sm:text-5xl font-bold">Connect With Sattva Sanctuary</h1>
+          <h1 className="font-serif-luxury text-4xl sm:text-5xl font-bold">Connect With yogyatra_shreya</h1>
           <p className="text-xs sm:text-sm text-[#A1BBB0] max-w-xl mx-auto">
             Have questions about private alignment coaching, corporate retreats, or studio visits? Our team is at your service.
           </p>
@@ -130,7 +130,7 @@ export const Contact: React.FC = () => {
                 <div>
                   <span className="font-bold text-white block">Studio Location</span>
                   <p className="text-[#A1BBB0] mt-0.5">
-                    Sattva Sanctuary, 42 Lotus Boulevard, Indiranagar, Bengaluru, KA 560038
+                    yogyatra_shreya Sanctuary, 42 Lotus Boulevard, Indiranagar, Bengaluru, KA 560038
                   </p>
                 </div>
               </div>
@@ -149,8 +149,8 @@ export const Contact: React.FC = () => {
                 <Mail className="w-5 h-5 text-[#88B09F] shrink-0 mt-0.5" />
                 <div>
                   <span className="font-bold text-white block">General Inquiries</span>
-                  <a href="mailto:namaste@sattvayoga.com" className="text-[#A1BBB0] hover:text-white transition-colors">
-                    namaste@sattvayoga.com
+                  <a href="mailto:namaste@yogyatra_shreya.com" className="text-[#A1BBB0] hover:text-white transition-colors">
+                    namaste@yogyatra_shreya.com
                   </a>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export const Contact: React.FC = () => {
               <div className="w-12 h-12 rounded-full bg-[#1B3B36] text-[#E2C085] flex items-center justify-center shadow-lg animate-bounce">
                 <MapPin className="w-6 h-6" />
               </div>
-              <h5 className="font-serif-luxury font-bold text-[#1B3B36] text-sm">Sattva Yoga Studio Sanctuary</h5>
+              <h5 className="font-serif-luxury font-bold text-[#1B3B36] text-sm">yogyatra_shreya Yoga Studio Sanctuary</h5>
               <p className="text-[11px] text-[#52635B] max-w-xs">
                 Indiranagar 100ft Road, Opposite Lotus Park. Valet parking available at premises.
               </p>

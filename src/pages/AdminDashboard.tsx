@@ -121,7 +121,7 @@ export const AdminDashboard: React.FC = () => {
       title: blogTitle,
       excerpt: blogExcerpt,
       content: 'Full article body content...',
-      author: 'Sattva Editorial',
+      author: 'yogyatra_shreya Editorial',
       authorRole: 'Master Lead',
       authorImage: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400',
       readTime: '4 min read',

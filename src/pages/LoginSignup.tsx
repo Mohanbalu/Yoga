@@ -18,7 +18,7 @@ export const LoginSignup: React.FC = () => {
   const navigate = useNavigate();
 
   const [mode, setMode] = useState<'login' | 'signup' | 'forgot'>('login');
-  const [email, setEmail] = useState('aarav@sattvayoga.com');
+  const [email, setEmail] = useState('aarav@yogyatra_shreya.com');
   const [password, setPassword] = useState('••••••••');
   const [name, setName] = useState('Aarav Mehta');
   const [rememberMe, setRememberMe] = useState(true);
@@ -66,12 +66,14 @@ export const LoginSignup: React.FC = () => {
       >
         {/* Top Branding Header */}
         <div className="text-center space-y-2">
-          <div className="w-12 h-12 rounded-full bg-[#1B3B36] text-[#E2C085] flex items-center justify-center mx-auto font-serif-luxury font-bold text-2xl shadow-md">
-            S
-          </div>
+          <img
+            src="https://i.ibb.co/RkBVMMCm/logo.png"
+            alt="yogyatra_shreya Logo"
+            className="w-12 h-12 object-contain rounded-full bg-[#1B3B36] p-1 mx-auto shadow-md border border-[#E2C085]/30"
+          />
           <h2 className="font-serif-luxury text-2xl font-bold text-[#1B3B36]">
-            {mode === 'login' && 'Welcome Back to Sattva'}
-            {mode === 'signup' && 'Create Your Sattva Sanctuary Account'}
+            {mode === 'login' && 'Welcome Back to yogyatra_shreya'}
+            {mode === 'signup' && 'Create Your yogyatra_shreya Account'}
             {mode === 'forgot' && 'Reset Your Password'}
           </h2>
           <p className="text-xs text-[#6B857B]">

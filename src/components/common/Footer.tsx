@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
       showToast('Please enter a valid email address', 'error');
       return;
     }
-    showToast('Thank you for subscribing to Sattva Sanctuary Digest!', 'success');
+    showToast('Thank you for subscribing to yogyatra_shreya Digest!', 'success');
     setEmailInput('');
   };
 
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
           <div className="max-w-xl text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C4138] rounded-full text-[#E2C085] text-xs font-semibold mb-3">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Sattva Mindful Newsletter</span>
+              <span>yogyatra_shreya Newsletter</span>
             </div>
             <h3 className="font-serif-luxury text-2xl sm:text-3xl font-bold text-white mb-2">
               Receive Weekly Wisdom & Exclusive Retreat Invites
@@ -74,11 +74,13 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#E2C085] to-[#B38F4D] flex items-center justify-center text-[#18241F] font-serif-luxury font-bold text-xl shadow-md">
-                S
-              </div>
+              <img
+                src="https://i.ibb.co/RkBVMMCm/logo.png"
+                alt="yogyatra_shreya Logo"
+                className="w-10 h-10 object-contain rounded-full shadow-md bg-[#21312A] p-1 border border-[#E2C085]/30"
+              />
               <div>
-                <span className="font-serif-luxury text-2xl font-bold text-white block">Sattva</span>
+                <span className="font-serif-luxury text-xl font-bold text-white block">yogyatra_shreya</span>
                 <span className="text-[10px] tracking-[0.25em] text-[#88B09F] font-medium uppercase block -mt-1">
                   Luxury Studio
                 </span>
@@ -172,7 +174,7 @@ export const Footer: React.FC = () => {
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#E2C085] shrink-0 mt-0.5" />
                 <span>
-                  Sattva Sanctuary, 42 Lotus Boulevard, Indiranagar, Bengaluru, Karnataka 560038
+                  yogyatra_shreya Sanctuary, 42 Lotus Boulevard, Indiranagar, Bengaluru, Karnataka 560038
                 </span>
               </li>
               <li className="flex items-center gap-2.5">
@@ -181,7 +183,7 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#88B09F] shrink-0" />
-                <a href="mailto:namaste@sattvayoga.com" className="hover:text-white transition-colors">namaste@sattvayoga.com</a>
+                <a href="mailto:namaste@yogyatra_shreya.com" className="hover:text-white transition-colors">namaste@yogyatra_shreya.com</a>
               </li>
             </ul>
           </div>
@@ -189,7 +191,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-[#6E8A7F] gap-4">
-          <p>© {new Date().getFullYear()} Sattva Luxury Yoga Studio. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} yogyatra_shreya Luxury Yoga Studio. All Rights Reserved.</p>
 
           <div className="flex items-center gap-6">
             <Link to="/privacy-terms" className="hover:text-[#A1BBB0] transition-colors">Privacy Policy</Link>

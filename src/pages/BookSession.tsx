@@ -67,7 +67,7 @@ export const BookSession: React.FC = () => {
   const handleSubmitBooking = (e: React.FormEvent) => {
     e.preventDefault();
     const userName = currentUser ? currentUser.name : (guestName || 'Valued Guest');
-    const userEmail = currentUser ? currentUser.email : (guestEmail || 'guest@sattvayoga.com');
+    const userEmail = currentUser ? currentUser.email : (guestEmail || 'guest@yogyatra_shreya.com');
 
     const created = addBooking({
       userId: currentUser ? currentUser.id : 'guest-1',

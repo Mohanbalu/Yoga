@@ -29,7 +29,7 @@ export const About: React.FC = () => {
             <span className="italic font-normal text-[#E2C085]">Designed for Modern Peace.</span>
           </h1>
           <p className="text-sm sm:text-base text-[#A1BBB0] max-w-2xl mx-auto leading-relaxed">
-            Sattva was founded with a singular intention: to create a tranquil sanctuary where authentic yogic wisdom meets luxury hospitality, somatic alignment, and mindful community.
+            yogyatra_shreya was founded with a singular intention: to create a tranquil sanctuary where authentic yogic wisdom meets luxury hospitality, somatic alignment, and mindful community.
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ export const About: React.FC = () => {
               In 2018, after decades of studying at Himalayan ashrams and practicing biomechanics in Europe, our founders set out to build a space free of gym noise and artificial distractions.
             </p>
             <p className="text-xs sm:text-sm text-[#52635B] leading-relaxed">
-              Every detail of Sattva—from the sustainably harvested teak wood floors to the sound-softened curved walls and chemical-free organic air diffusion—was engineered to facilitate immediate parasympathetic nervous system release.
+              Every detail of yogyatra_shreya—from the sustainably harvested teak wood floors to the sound-softened curved walls and chemical-free organic air diffusion—was engineered to facilitate immediate parasympathetic nervous system release.
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-4 border-t border-[#E0ECE8]">

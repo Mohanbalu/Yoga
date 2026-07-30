@@ -79,7 +79,7 @@ export const BookingModal: React.FC = () => {
 
   const handleProceedToPayment = () => {
     const userName = currentUser ? currentUser.name : (guestName || 'Valued Guest');
-    const userEmail = currentUser ? currentUser.email : (guestEmail || 'guest@sattvayoga.com');
+    const userEmail = currentUser ? currentUser.email : (guestEmail || 'guest@yogyatra_shreya.com');
 
     const createdBooking = addBooking({
       userId: currentUser ? currentUser.id : 'guest-1',
@@ -114,7 +114,7 @@ export const BookingModal: React.FC = () => {
           <div>
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#2C524B] text-[#E2C085] text-[10px] font-semibold uppercase tracking-wider mb-1">
               <Sparkles className="w-3 h-3" />
-              Sattva Reservation
+              yogyatra_shreya Reservation
             </div>
             <h3 className="font-serif-luxury text-2xl font-bold">Book Your Yoga Session</h3>
             <p className="text-xs text-[#A2C7B9]">Step {step} of 3 — Personalized Practice Details</p>
@@ -325,7 +325,7 @@ export const BookingModal: React.FC = () => {
                   <Tag className="w-4 h-4 text-[#88B09F] absolute left-3 top-2.5" />
                   <input
                     type="text"
-                    placeholder="Enter Coupon Code (e.g. SATTVA10)"
+                    placeholder="Enter Coupon Code (e.g. YOGYATRA10)"
                     value={couponInput}
                     onChange={(e) => setCouponInput(e.target.value)}
                     className="w-full bg-white border border-[#D5E2DC] rounded-xl pl-9 pr-3 py-2 text-xs text-[#1B3B36] uppercase font-semibold focus:outline-none focus:border-[#1B3B36]"

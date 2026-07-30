@@ -6,7 +6,7 @@ export const CookieBanner: React.FC = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('sattva_cookie_consent');
+    const consent = localStorage.getItem('yogyatra_cookie_consent');
     if (!consent) {
       const timer = setTimeout(() => setShow(true), 1500);
       return () => clearTimeout(timer);
@@ -14,7 +14,7 @@ export const CookieBanner: React.FC = () => {
   }, []);
 
   const acceptCookies = () => {
-    localStorage.setItem('sattva_cookie_consent', 'accepted');
+    localStorage.setItem('yogyatra_cookie_consent', 'accepted');
     setShow(false);
   };
 

@@ -1,6 +1,6 @@
 {
-  "name": "Sattva Luxury Yoga & Wellness Studio",
-  "description": "A high-end, tranquil yoga and mindful living studio platform offering personalized classes, private sessions, memberships, and wellness coaching.",
+  "name": "yogyatra_shreya",
+  "description": "A high-end, tranquil yoga and mindful living studio platform offering personalized classes, private sessions, memberships, and wellness coaching at yogyatra_shreya.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

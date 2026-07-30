@@ -172,7 +172,7 @@ export const Plans: React.FC = () => {
                   <th className="p-4 font-bold">Feature / Benefit</th>
                   <th className="p-4 font-bold text-center">Starter Harmony</th>
                   <th className="p-4 font-bold text-center bg-[#F4F8F6]">Serenity Unlimited</th>
-                  <th className="p-4 font-bold text-center">Sattva Royal VIP</th>
+                  <th className="p-4 font-bold text-center">yogyatra_shreya Royal VIP</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#E6EBE8] text-[#2C3B34]">

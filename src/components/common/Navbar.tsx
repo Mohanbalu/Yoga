@@ -69,14 +69,14 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1B3B36] to-[#2C524B] flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-                <span className="font-serif-luxury text-xl font-bold italic tracking-tighter text-[#E2C085]">
-                  S
-                </span>
-              </div>
+              <img
+                src="https://i.ibb.co/RkBVMMCm/logo.png"
+                alt="yogyatra_shreya Logo"
+                className="w-10 h-10 object-contain rounded-full shadow-md group-hover:scale-105 transition-transform bg-[#1B3B36] p-1 border border-[#E2C085]/30"
+              />
               <div className="flex flex-col">
-                <span className="font-serif-luxury text-2xl font-bold tracking-tight text-[#1B3B36] group-hover:text-[#2C524B] transition-colors">
-                  Sattva
+                <span className="font-serif-luxury text-xl sm:text-2xl font-bold tracking-tight text-[#1B3B36] group-hover:text-[#2C524B] transition-colors">
+                  yogyatra_shreya
                 </span>
                 <span className="text-[10px] tracking-[0.25em] text-[#6B857B] font-medium uppercase -mt-1">
                   Luxury Yoga

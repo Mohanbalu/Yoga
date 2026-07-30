@@ -101,7 +101,7 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 const DEFAULT_USER: User = {
   id: 'usr-1',
   name: 'Aarav Mehta',
-  email: 'aarav@sattvayoga.com',
+  email: 'aarav@yogyatra_shreya.com',
   phone: '+91 98765 43210',
   role: 'user',
   avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400',
@@ -113,8 +113,8 @@ const DEFAULT_USER: User = {
 
 const DEFAULT_ADMIN: User = {
   id: 'admin-1',
-  name: 'Sattva Admin',
-  email: 'admin@sattvayoga.com',
+  name: 'yogyatra_shreya Admin',
+  email: 'admin@yogyatra_shreya.com',
   phone: '+91 91234 56789',
   role: 'admin',
   avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400',
