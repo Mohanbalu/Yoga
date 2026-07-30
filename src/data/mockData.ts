@@ -118,7 +118,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     durationMinutes: 60,
     priceINR: 1199,
     priceUSD: 16,
-    image: 'https://images.unsplash.com/photo-1510894347048-471ea1f732a8?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.ytimg.com/vi/jZXtmkGf4_Q/maxresdefault.jpg',
     popular: true,
     benefits: ['Instant nervous system reset', 'Relieves chronic insomnia & anxiety', 'Deep muscle relaxation'],
     suitableFor: 'Anyone experiencing burnout, stress, or sleep disturbances',
