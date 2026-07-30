@@ -15,7 +15,10 @@ import {
   ChevronUp,
   Play,
   Calendar,
-  CheckCircle2
+  CheckCircle2,
+  X,
+  Instagram,
+  ExternalLink
 } from 'lucide-react';
 import { motion } from 'motion/react';
 import { GALLERY_IMAGES } from '../data/mockData';
@@ -133,7 +136,8 @@ export const Home: React.FC = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-5 relative hidden lg:block"
+            className="lg:col-span-5 relative hidden lg:block cursor-pointer"
+            onClick={() => setVideoModal(true)}
           >
             <div className="glass-panel p-4 rounded-3xl shadow-2xl relative group">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
@@ -144,7 +148,10 @@ export const Home: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-black/25 flex items-center justify-center">
                   <button
-                    onClick={() => setVideoModal(true)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setVideoModal(true);
+                    }}
                     className="w-16 h-16 rounded-full bg-white/90 text-[#1B3B36] flex items-center justify-center shadow-2xl hover:scale-110 transition-transform cursor-pointer pl-1"
                   >
                     <Play className="w-7 h-7 fill-current text-[#1B3B36]" />
@@ -453,26 +460,51 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Video Modal Simulation */}
+      {/* Video Modal with Instagram Iframe */}
       {videoModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-          <div className="bg-[#18241F] text-white p-6 rounded-3xl max-w-2xl w-full space-y-4 relative">
-            <div className="flex items-center justify-between">
-              <h3 className="font-serif-luxury text-lg font-bold">Sattva Studio Tour Video</h3>
-              <button onClick={() => setVideoModal(false)} className="text-white/60 hover:text-white cursor-pointer">
-                Close
-              </button>
-            </div>
-            <div className="aspect-video bg-black rounded-2xl overflow-hidden relative flex items-center justify-center">
-              <img
-                src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80&w=1200"
-                alt="Studio Tour Video"
-                className="w-full h-full object-cover filter brightness-75"
-              />
-              <div className="absolute text-center space-y-2">
-                <p className="text-sm font-semibold">4K Studio Tour Video Playing...</p>
-                <p className="text-xs text-white/70">Bamboo floors • Organic Herbal Bar • Rain Showers</p>
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
+          onClick={() => setVideoModal(false)}
+        >
+          <div
+            className="bg-[#18241F] text-white p-5 sm:p-6 rounded-3xl max-w-lg w-full space-y-4 relative border border-[#34483F] shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-[#2C3B34] pb-3">
+              <div className="flex items-center gap-2">
+                <Instagram className="w-5 h-5 text-[#E2C085]" />
+                <h3 className="font-serif-luxury text-base sm:text-lg font-bold text-white">
+                  Studio Video Tour
+                </h3>
               </div>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.instagram.com/p/DbF8GTEPnuE/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-[#E2C085] hover:underline flex items-center gap-1"
+                >
+                  <span>Open Instagram</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+                <button
+                  onClick={() => setVideoModal(false)}
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors cursor-pointer"
+                  aria-label="Close"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            <div className="w-full flex justify-center bg-black/40 rounded-2xl p-2 overflow-hidden min-h-[480px]">
+              <iframe
+                src="https://www.instagram.com/p/DbF8GTEPnuE/embed"
+                className="w-full max-w-[480px] h-[520px] rounded-xl border-0"
+                title="Instagram Studio Tour Video"
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              />
             </div>
           </div>
         </div>
